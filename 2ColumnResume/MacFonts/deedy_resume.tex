@@ -1,0 +1,361 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added  Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-document-class}
+\usepackage{fancyhdr}
+ 
+ \usepackage[UTF8, heading = false, scheme = plain]{ctex}
+ 
+%\usepackage{xeCJK}
+%\setCJKmainfont[BoldFont=STZhongsong, ItalicFont=STKaiti]{STSong}
+%\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+%\setCJKmonofont{STFangsong}
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{柳}{祚鹏}{
+% \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+\href{mailto:liuzp19890810@gmail.com}{liuzp19890810@gmail.com} | \href{tel:15800444671}{+158.0044.4671} | \href{tel:18516096891}{+185.1609.6891} | \href{mailto:liuzuopeng01@baidu.com}{liuzuopeng01@baidu.com} 
+%\urlstyle{same}\href{地址:上海市浦东新区鹤永路600弄}{上海市浦东新区鹤永路600弄}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{教育背景} 
+\subsection{上海交通大学  |  硕士}
+\descript{专业: 计算机科学与技术}
+\location{可搜索加密技术的研究 \\
+导师: 谷大武 \\
+2015 - 06  | 上海
+}
+\sectionsep
+
+\subsection{武汉纺织大学  |  学士}
+\descript{专业: 软件工程}
+\location{
+2012 - 09 | 武汉
+}
+\location{
+2011 - Java 竞赛湖北赛区三等奖 \\
+2010 - 大学生数学竞赛三等奖 \\
+2010 - 国家励志奖学金 \\
+2009, 2010 -  校级奖学金 \\
+2010 - 三好学生
+}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{链接} 
+Github:// \href{https://github.com/FromPointer}{\bf https://github.com/FromPointer} \\
+Github:// \href{https://github.com/Nice2Me}{\bf https://github.com/Nice2Me} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%Evolutionary Computation \\
+%Defending Computer Networks \\
+%Machine Learning \\
+%\sectionsep
+%
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+%Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{专业技能}
+\subsection{语言}
+%\location{编程语言:}
+Objective-C \textbullet{}  C++ \textbullet{} Swift \textbullet{} C  \\
+Javascript \textbullet{} Shell \textbullet{} AWK \textbullet{} Perl \\ 
+
+%\location{数据库:}
+MySQL \textbullet{}   SQLite \\ 
+
+\bigskip
+
+\subsection{专业工具}
+\textit{xcode} - 项目开发与管理、问题诊断与性能优化(Instrument)\\
+\textit{sourceTree, Tower} - Git图形化工具\\
+\textit{cornerStone} - SVN图形化工具\\
+
+\bigskip
+
+\subsection{版本管理}
+\textit{Git} - 精通\\
+\textit{SVN} - 熟练使用\\
+
+\bigskip
+
+\subsection{开源项目}
+\textit{SDWebImage}     - 理解\\
+\textit{AFNetworking}   - 理解\\
+\textit{ASIHTTPRequest} - 熟悉\\
+\textit{FastImageCache} - 熟悉\\
+
+\bigskip
+
+\subsection{CI技能}
+\textit{搭建jenkins打包平台}\\
+\textit{搭建gerrit review平台}\\
+\sectionsep
+
+
+
+
+\section{自我评价} 
+具有良好的表达沟通能力，善于思考，对工作认真负责。对新技术具有快速的自学能力 ，协调性好，可胜任团队或个人项目。具有较强的抗压能力。性格开朗、乐观、具有良好的团队合作精神，能很快适应公司文化。
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{工作经历}
+\runsubsection{百度}
+\descript{| 百度糯米C端研发工程师 }
+\vspace{1mm } 
+\location{2014.12 - 至今 | 上海}
+\vspace{\topsep} 
+\begin{tightemize}
+\item 参与百糯iOS客户端各版本的迭代，完成基本功能开发，独立完成分享sdk、主题管理器、米图社区的开发；参与核心技术组件化技术的开发和单元测试。
+\end{tightemize}
+%\location{糯米iOS客户端：}
+%\vspace{\topsep } 
+%\begin{tightemize}
+%\item 完成基本功能开发
+%\item 独立完成分享sdk开发
+%\item 独立完成主题管理器开发
+%\item 独立完成米图社区开发
+%\item 参与组件化技术开发
+%\item 参与单元测试开发
+%\end{tightemize}
+\sectionsep
+
+
+\runsubsection{D\lowercase{e}NA}
+\descript{| 游戏开发工程师}
+\vspace{1mm } 
+\location{2014.03 –  2014.12 | 上海 | 实习}
+%\vspace{2mm} 
+\begin{tightemize}
+\item 在 Mac 平台上，使用开源的 Cocos2dx-JS 引擎开发跨平台（Android、iOS）的手游。该游戏类似于常见的三消游戏，优势是更具酷炫的
+动画效果和提供更好的玩家体验；工作任务包括 UI 设计、自定义控件、功能开发、JS 绑定以及和第三方平台交互
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Intel}
+\descript{| SSG/DRG - 研发工程师 }
+\vspace{1mm } 
+\location{2013.03 – 2013.12 | 上海 | 实习}
+%\vspace{2mm} 
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item 使用SSE指令集和OpenCL分别处理同规模的数据，并比较两者之间的差异
+\item 使用OpenCL和CUDA语言分别在Intel和NVIDIA的GPU上编程，比较两者之间的差异
+\item 对比不同平台上的各性能指标并分析导致性能差异的因素  %GPU 在实际开 发中的瓶颈,并且对比相同规模的计算量在不同 GPU 平台下的性能
+\end{tightemize}
+\sectionsep
+
+
+%\runsubsection{武汉天域有限公司}
+%\descript{| Open Source Contributor \& Team Leader}
+%\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+%\begin{tightemize}
+%\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+%\item I created the Meme generator and more in PHP and Shell.
+%\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{项目经验}
+\runsubsection{百度糯米iOS客户端}
+\descript{| 2014.12 - 至今}
+\location{\textbf{iTunes:} \href{https://itunes.apple.com/us/app/bai-du-nuo-mi/id467067151}{\bf https://itunes.apple.com/us/app/bai-du-nuo-mi/id467067151} }
+\begin{tightemize}
+\item 完成App各版本迭代中基本功能的开发
+\item 完成分享SDK开发。使用Objective-C编写支持多分享渠道的SDK(包括微信、QQ、百度hi和新浪微博等)，同时具有良好的可扩展性，易扩展于支持其它分享渠道；另外，SDK支持同时处理多个分享操作和多个分享响应回调
+\item 完成主题管理器的开发；为适应App版本的快速迭代，开发键值对的主题管理器，每个键代表一个控件的属性，而值表示字体的名字、大小或控件颜色支持多级视图的控制，使得App的主题管理更简单和整洁；同时，支持服务器的下发更新
+\item 完成米图社区的开发。开发米图通用模块，包括图片的拍摄、选择、删除、预览、放大等操作；同时，使用FastImageCache技术优化系统图片的加载
+\item 参于单元测试的开发。使用系统自带的XCTest对项目中公共接口进行单元测试
+%\item 参于组件化技术的开发；
+\item 参与组内项目的持续集成工作。使用开源的Jenkins搭建打包平台，同时编写脚本监听打包进程并自启动打包平台的异常退出；同时管理组内的Gerrit平台的Review工作
+\item 在App中嵌入开源的JSPatch引擎，充分利用JSPatch可以动态替换原生代码的特征，实时修复已发布的App版本的线上BUG
+\end{tightemize}
+\sectionsep
+
+
+
+
+\runsubsection{R\lowercase{umble}F\lowercase{ish}TV iOS客户端}
+\descript{}
+%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+\location{\textbf{Github:} \href{https://github.com/Nice2Me/RumbleFishTV}{\bf https://github.com/Nice2Me/RumbleFishTV} }
+\begin{tightemize}
+\item 使用AFNetwokring、SDWebImage等开源框架，仿照斗鱼TV完成了斗鱼TV客户端大部门功能的开发；主要包括分类浏览、搜索浏览、二维码扫码观看等；其中实时播放部分使用apple提供的HLS(Http Live Streaming)技术实现
+\end{tightemize}
+\sectionsep
+
+
+
+
+\runsubsection{NAW\lowercase{eb}I\lowercase{mage}}
+\descript{}
+\location{\textbf{Github:} \href{https://github.com/Nice2Me/NAWebImage}{\bf https://github.com/Nice2Me/NAWebImage} }
+\begin{tightemize}
+\item 学习SDWebImage，并重写SDWebImage命名为NAWebImage
+\item 为NAWebImage添加NSURLSession支持 %使用NSURLSession进行网络请求
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Research}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Researcher}
+%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+%\sectionsep
+
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

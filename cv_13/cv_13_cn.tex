@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+%\usepackage{fontspec,xunicode}
+%\setmainfont{SimSun}
+%\setromanfont{Songti SC Light} % 可以添加系统字体
+%\setmonofont{Courier New} % 等寬字型
+%
+%\newfontfamily\hei{Heiti SC Medium}
+%\newfontfamily\hei{Yuanti SC Regular}
+
+
+\usepackage{fontspec,xunicode}
+%\setmainfont{Songti.ttc}
+\setromanfont{Songti SC Light} % 可以添加系统字体
+\setmonofont{Courier New} % 等寬字型
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{柳祚鹏} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf 地址} \> 上海市浦东新区鹤永路600弄\\ % Address line 1
+{\bf 城市}\> 上海 \\ % Address line 2
+{\bf 学历} \> 硕士 \\ % Date of birth 
+%{\bf 国籍} \> 中国 % Nationality
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf 联系电话} \> +86 158 000 444 671 \\ % Home phone
+{\bf GitHub} \> https://github.com/Nice2Me \\
+%{\bf Mobile Phone} \> +0 (000) 111 1112 \\ % Mobile phone
+{\bf Email} \> \href{mailto:liuzp19890810@gmail.com}{liuzp19890810@gmail.com} \\ % Email address
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+%\section{个人信息}
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nec dolor sed sagittis. Cras justo lorem, volutpat mattis lacus vel, consequat aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer blandit, massa at tincidunt ornare, dolor magna interdum felis, ac blandit urna neque in turpis.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{教育背景}
+
+\tabbedblock{
+\bf{2012-2015} \> 计算机科学与技术 - \href{http://www.sjtu.edu.cn/}{\textbf{上海交通大学}，上海} \\[5pt]
+\>\textbf{研究方向} - 云计算上的可搜索加密技术研究 \\[5pt]
+\>\textbf{导师} - 谷大武 \\[5pt]
+\>\+
+\textit{\textbf{研究内容} - 云计算环境下的模糊和动态可搜索加密方案 }
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2008-2012} \> 软件工程 - \href{http://www.wtu.edu.cn}{\textbf{武汉纺织大学}，武汉}\\[5pt]
+\>\+
+\textit{\textbf{学习内容} - } \> A \\
+\textit{Statistics (AS)} \> A \\
+\textit{Physics} \> A \\
+\textit{Economics} \> B
+}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{工作经历}
+
+\job
+{2015/03 -}{至今}
+{\textbf{百度（中国）有限公司}, 上海, 全职}
+{http://www.baidu.com} 
+{百度糯米C端研发工程师}
+%{\textbf{工作类型} - 全职}
+{参与糯米ios客户端的开发。期间单独负责完成分享sdk、主题管理器的编写和米图社区的开发；参与组件化技术的改造和单元测试。}
+
+%------------------------------------------------
+
+\job
+{3 2014 -}{12 2014}
+{DeNA, 上海, 实习}
+{http://www.initech.com}
+{游戏开发工程师}
+{ 在 Mac 平台使用开源的 Cocos2dx-JS 引擎开发一款跨平台的手游,主要适用于 Android 和 IOS 平台。}
+
+%\begin{itemize-noindent}
+%\item{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals.)}
+%\item{Managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}
+%\end{itemize-noindent}
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nec dolor sed sagittis.}
+
+\job
+{3 2013 -}{12 2013}
+{Intel上海研发中心, 上海, 实习}
+{http://www.initech.com}
+{SSG/DRG - 研发工程师}
+{ 使用 OpenCL 语言去挖掘 GPU 的性能,比较 CPU 和 GPU 性能差异,寻找 GPU 在实际开 发中的瓶颈,并且对比相同规模的计算量在不同 GPU 平台下的性能。}
+
+%----------------------------------------------------------------------------------------
+%	IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{项目经验}
+
+百度糯米iOS：\\
+1. 分享SDK：使用objc编写分享sdk（支持平台包括微信、QQ、百度hi和新浪微博），具有很好的可扩展性，能很容易扩展至支持其它分享渠道；另外，支持同时处理多个分享操作和处理多个分享回调。\\
+2. 主题管理器：为适应app版本主题元素的快速迭代，开发键值对的主题管理中心，可支持多级视图的控制，同时支持服务器的下发更新。\\
+3. 米图社区：开发通用模块，支持图片的拍摄、选择、删除、预览放大等操作。\\
+4. 单元测试：使用系统自带的XCTest对项目中公共接口进行单元测试。\\
+5. 使用jenkins搭建打包平台，编写脚本监听并自启动打包平台的异常退出；和维护；同时管公司的gerrit代码reivew平台。\\
+
+NAWebImage: \\
+1. 学习SDWebImage，重写SDWebImage命名为NAWebImage。\\
+2. 为SDWebImage添加NSURLSession网络请求操作。\\
+
+
+RumbleFishTV:\\
+1. 使用AFNetwokring、SDWebImage等开源框架，仿照斗鱼TV完成了斗鱼TV客户端大部门功能的开发；主要包括分类浏览、搜索浏览、二维码扫码观看等；其中实时播放部分使用apple提供的HLS(Http Live Streaming)技术实现。\\
+
+
+\section{专业技能}
+
+\skillgroup{编程语言}
+{
+\textit{Objective-C, Swift}\\
+\textit{C/C++}\\
+\textit{Shell, AWK, Perl}
+\textit{SQLite}
+}
+
+%------------------------------------------------
+
+\skillgroup{版本管理}
+{
+\textit{Git} - 精通\\
+\textit{SVN} - 熟练使用\\
+}
+
+%------------------------------------------------
+
+\skillgroup{工具}
+{
+\textit{xcode} - 项目开发与管理、问题诊断与性能优化(Instrument)\\
+\textit{sourceTree, Tower} - Git图形化工具\\
+\textit{cornerStone} - SVN图形化工具\\
+}
+
+\skillgroup{开源项目}
+{
+\textit{SDWebImage}     - 理解\\
+\textit{AFNetworking}   - 理解\\
+\textit{ASIHTTPRequest} - 熟悉\\
+\textit{FastImageCache} - 熟悉\\
+}
+
+\skillgroup{CI技能}
+{
+\textit{搭建jenkins打包平台}\\
+\textit{搭建gerrit review平台}\\
+}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{兴趣爱好}
+
+\interestsgroup{
+\interest{健身}
+\interest{桌球}
+\interest{骑行}
+\interest{旅游}
+\interest{篮球}
+}
+
+%----------------------------------------------------------------------------------------
+%	REFEREE SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{其他}
+%
+%\parbox{0.5\textwidth}{ % First block
+%\begin{tabbing}
+%\hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+%{\bf Name} \> Bill Lumbergh \\ % Referee name
+%{\bf Company} \> Initech Inc. \\ % Referee company
+%{\bf Position} \> Vice President \\ % Referee job title 
+%{\bf Contact} \> \href{mailto:bill@initech.com}{bill@initech.com} % Referee contact information
+%\end{tabbing}}
+%\hfill % Horizontal space between the two blocks
+%\parbox{0.5\textwidth}{ % Second block
+%\begin{tabbing}
+%\hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+%{\bf Name} \> Michael "Big Mike" Tucker\\ % Referee name
+%{\bf Company} \> Burbank Buy More \\ % Referee company
+%{\bf Position} \> Store Manager \\ % Referee job title 
+%{\bf Contact} \> \href{mailto:mike@buymore.com}{mike@buymore.com} % Referee contact information
+%\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
